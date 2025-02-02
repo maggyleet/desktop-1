@@ -185,12 +185,12 @@ h2 {
 .hiw {
     padding: 5rem 5%;
     text-align: center;
+    background: white;
 }
 
 .hiw h2 {
     color: #0066cc;
     font-size: 2.4rem;
-    text-align: center;
     margin-bottom: 3rem;
 }
 
@@ -214,31 +214,17 @@ h2 {
     text-align: center;
     line-height: 1.3;
     font-size: 1.1rem;
+    transition: transform 0.3s;
 }
 
-.hours {
-    background: #8CC63F;
-    top: 0;
-    left: 0;
+.circle-segment:hover {
+    transform: scale(1.05);
 }
 
-.interactive {
-    background: #FF6B6B;
-    top: 0;
-    right: 0;
-}
-
-.custom {
-    background: #33B5E5;
-    bottom: 0;
-    left: 0;
-}
-
-.assessment {
-    background: #FFC107;
-    bottom: 0;
-    right: 0;
-}
+.hours { background: #8CC63F; top: 0; left: 0; }
+.interactive { background: #FF6B6B; top: 0; right: 0; }
+.custom { background: #33B5E5; bottom: 0; left: 0; }
+.assessment { background: #FFC107; bottom: 0; right: 0; }
 
 .hiw-content {
     display: grid;
@@ -250,26 +236,14 @@ h2 {
 }
 
 .hiw-item h3 {
-    color: #0066cc;
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
-.hiw-item:nth-child(1) h3 {
-    color: #8CC63F;
-}
-
-.hiw-item:nth-child(2) h3 {
-    color: #FF6B6B;
-}
-
-.hiw-item:nth-child(3) h3 {
-    color: #33B5E5;
-}
-
-.hiw-item:nth-child(4) h3 {
-    color: #FFC107;
-}
+.hiw-item:nth-child(1) h3 { color: #8CC63F; }
+.hiw-item:nth-child(2) h3 { color: #FF6B6B; }
+.hiw-item:nth-child(3) h3 { color: #33B5E5; }
+.hiw-item:nth-child(4) h3 { color: #FFC107; }
 
 .hiw-item p {
     color: #666;
@@ -278,21 +252,17 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .hiw h2 {
-        text-align: center;
-    }
-
     .hiw-circle {
         width: 300px;
         height: 300px;
     }
-
+    
     .circle-segment {
         width: 150px;
         height: 150px;
         font-size: 1rem;
     }
-
+    
     .hiw-content {
         grid-template-columns: 1fr;
         padding: 0 1rem;
