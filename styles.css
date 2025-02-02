@@ -1,7 +1,7 @@
 /* Base styles */
 :root {
     --primary-blue: #0066cc;
-    --light-blue: #f5f9ff;
+    --light-blue: #a1c7ff;
     --coral: #ff6b6b;
     --text-dark: #333;
     --text-light: #666;
@@ -193,49 +193,73 @@ h2 {
 
 /* Footer Styles */
 .footer {
-    background: var(--primary-blue);
-    color: white;
+    background: var(--light-blue);
     padding: 4rem 5%;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 3rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.footer-section {
-    padding-right: 2rem;
+.footer-left {
+    max-width: 300px;
 }
 
-.footer-section h3 {
-    color: white;
+.footer-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.footer h3 {
+    color: var(--primary-blue);
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    text-align: left;
 }
 
-.footer-section ul {
+.footer ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-section ul li {
+.footer ul li {
     margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-dark);
 }
 
-.logo-section {
-    margin-bottom: 1.5rem;
+.footer-bottom {
+    background: var(--light-blue);
+    padding: 2rem 5%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.logo-section .img-placeholder {
-    background: white;
-    width: 120px;
-    height: 45px;
-    margin-bottom: 1rem;
+.footer-decorations {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
 }
 
-.logo-section p {
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.6;
+.ball-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.candy-icon {
+    width: 30px;
+    height: 60px;
+    margin-right: 2rem;
+}
+
+.kids-illustration {
+    width: 200px;
+    height: auto;
 }
 
 /* Mobile responsiveness */
@@ -259,19 +283,26 @@ h2 {
     .footer {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 2rem;
     }
     
-    .footer-section {
-        padding-right: 0;
-    }
-    
-    .logo-section .img-placeholder {
-        margin: 0 auto 1rem;
-    }
-    
-    .footer-section h3 {
+    .footer-left {
+        max-width: 100%;
         text-align: center;
+    }
+    
+    .footer-logo {
+        margin: 0 auto 1.5rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 150px;
+    }
+    
+    .footer-decorations {
+        right: 50%;
+        transform: translateX(50%);
     }
     
     /* Mobile sidebar */
@@ -559,4 +590,98 @@ h2 {
     .mobile-menu {
         display: block;
     }
-} 
+}
+
+/* Image handling */
+.about1 img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.wdwc img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.advantage img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.program img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Image handling styles */
+.logo img {
+    width: 120px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.about1-img {
+    flex: 1;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.about1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.wdwc-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.wdwc-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.advantage-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.advantage-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.program img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
