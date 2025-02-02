@@ -1,0 +1,40 @@
+please make a exact website as the images in the following structure class provided, make sure it is mobile reposnisble too, and please leave space for the images using fake div as a plce holder
+
+classes: 
+    .header
+        .logo
+        .menu
+        .search
+        .enrol
+    .about1
+    .wdwc
+        .left
+        .right
+            list
+    .about2
+    .level
+        .title
+        .cont
+            .left
+                .title
+                .cont
+            .right
+                .title
+                .cont
+    .advantage
+        .title
+        .cont
+            .left
+            .right
+    .hiw
+        .title
+        .left
+        .right
+    .misc
+        .logo_sec
+        .positive_minds
+        .support
+        .contact
+    .footer
+
+    please make it responsible by giving opens in the side bar on mobiles, andd do the place holders for images, i want same exact output as image, i can add images later

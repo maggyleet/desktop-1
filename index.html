@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positive Minds Academy</title>
+    <title>Math Academy</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Add Font Awesome for menu icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
 </head>
 <body>
     <!-- Mobile Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="close-btn" onclick="toggleSidebar()">&times;</div>
-        <div class="sidebar-links">
+        <div class="menu-items">
             <a href="#home">Home</a>
             <a href="#courses">Courses</a>
             <a href="#online">Online Classes</a>
@@ -23,12 +22,12 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav>
+    <!-- Header -->
+    <div class="header">
         <div class="logo">
-            <img src="logo.png" alt="Positive Minds Academy">
+            <div class="img-placeholder">Logo</div>
         </div>
-        <div class="nav-links">
+        <div class="menu">
             <a href="#home">Home</a>
             <a href="#courses">Courses</a>
             <a href="#online">Online Classes</a>
@@ -36,141 +35,156 @@
             <a href="#contact">Contact Us</a>
             <a href="#blog">Blog</a>
             <a href="#camp">Summer Camp</a>
-            <button class="enquire-btn">Enquire Now</button>
         </div>
-        <div class="menu-icon" onclick="toggleSidebar()">
+        <div class="enrol">
+            <button>Enquire Now</button>
+        </div>
+        <div class="mobile-menu" onclick="toggleSidebar()">
             <i class="fas fa-bars"></i>
         </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
+    <!-- About 1 -->
+    <div class="about1">
+        <div class="content">
             <h1>Mastery Through<br>Logical Thinking in Math</h1>
             <p>We foster understanding by encouraging our students to work through challenging and unfamiliar problems</p>
-            <button class="schedule-button">Schedule An Evaluation</button>
+            <button>Schedule An Evaluation</button>
         </div>
-        <div class="hero-image">
-            <img src="https://via.placeholder.com/600x400/f5f9ff/333333?text=Smiling+Student" alt="Student learning math">
-        </div>
-    </header>
+        <div class="img-placeholder">Student Image</div>
+    </div>
 
-    <!-- Topics Section -->
-    <section class="topics">
-        <h2>What do we cover?</h2>
-        <div class="topics-grid">
-            <div class="topic-item">Measurements</div>
-            <div class="topic-item">Decimals</div>
-            <div class="topic-item">Fractions</div>
-            <div class="topic-item">Geometry</div>
-            <div class="topic-item">Problem Solving</div>
-            <div class="topic-item">Statistics & Graphing</div>
+    <!-- What do we cover -->
+    <div class="wdwc">
+        <div class="left">
+            <div class="img-placeholder">Students Studying</div>
         </div>
-    </section>
+        <div class="right">
+            <h2>What do we cover?</h2>
+            <ul>
+                <li>Measurements</li>
+                <li>Decimals</li>
+                <li>Fractions</li>
+                <li>Geometry</li>
+                <li>Problem Solving</li>
+                <li>Statistics & Graphing</li>
+            </ul>
+        </div>
+    </div>
 
-    <!-- Levels Section -->
-    <section class="levels">
-        <h2>Choose Your Level</h2>
-        <div class="level-cards">
-            <div class="level-card">
-                <h3>Accelerated Level</h3>
-                <p>The Accelerated Level math program challenges students beyond grade-level expectations, emphasizing critical thinking and problem-solving.</p>
+    <!-- About 2 -->
+    <div class="about2">
+        <p>Every child is unique, with their own learning style and pace. To meet their individual needs, we offer two levels of math instruction for each grade. This ensures that your child receives personalized support, maximizes the benefits of our program, and achieves excellence in their mathematical journey.</p>
+    </div>
+
+    <!-- Levels -->
+    <div class="level">
+        <div class="title">
+            <h2>Choose Your Level</h2>
+        </div>
+        <div class="cont">
+            <div class="left">
+                <div class="title">Accelerated Level</div>
+                <div class="cont">The Accelerated Level math program challenges students beyond grade-level expectations, emphasizing critical thinking and problem-solving.</div>
             </div>
-            <div class="level-card">
-                <h3>Advanced Level</h3>
-                <p>The Advanced Level offers complex concepts, critical thinking and analytical reasoning, designed for honors students.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advantages Section -->
-    <section class="advantages">
-        <h2>Advantages Of Our Math Program</h2>
-        <div class="advantages-grid">
-            <div class="advantage-item">Personalized Learning Experience</div>
-            <div class="advantage-item">Strong Foundational Skills</div>
-            <div class="advantage-item">Critical Thinking Development</div>
-            <div class="advantage-item">Engaging Interactive Lessons</div>
-            <div class="advantage-item">Certified Instructors</div>
-            <div class="advantage-item">Proven Track Record</div>
-        </div>
-    </section>
-
-    <!-- Add study group image section -->
-    <section class="study-image">
-        <img src="https://via.placeholder.com/800x400/f5f9ff/333333?text=Students+Studying+Together" alt="Students studying">
-        <p>We actively engage our students' thinking, guiding them to use logic, perform analysis, and draw conclusions. This approach cultivates lasting and profound mathematical fluency</p>
-    </section>
-
-    <!-- Add family learning section -->
-    <section class="family-section">
-        <img src="https://via.placeholder.com/400x300/f5f9ff/333333?text=Family+Learning" alt="Family learning together">
-        <div class="family-content">
-            <p>Every child is unique, with their own learning style and pace. To meet their individual needs, we offer two levels of math instruction for each grade. This ensures that your child receives personalized support, maximizes the benefits of our program, and achieves excellence in their mathematical journey.</p>
-        </div>
-    </section>
-
-    <!-- Add program icons -->
-    <section class="other-programs">
-        <h2>Learn About Other Programs</h2>
-        <div class="programs-grid">
-            <div class="program-item">
-                <img src="https://via.placeholder.com/80/0066cc/ffffff?text=ABC" alt="English">
-                <span>English</span>
-            </div>
-            <div class="program-item">
-                <img src="https://via.placeholder.com/80/0066cc/ffffff?text=<>" alt="Coding">
-                <span>Coding</span>
-            </div>
-            <div class="program-item">
-                <img src="https://via.placeholder.com/80/0066cc/ffffff?text=☀" alt="Summer Camp">
-                <span>Summer Camp</span>
+            <div class="right">
+                <div class="title">Advanced Level</div>
+                <div class="cont">The Advanced Level offers complex concepts, critical thinking and analytical reasoning, designed for honors students.</div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Add testimonial section -->
-    <section class="testimonials">
-        <h2>Hear from our parents!</h2>
-        <div class="testimonial-card">
-            <img src="https://via.placeholder.com/200x200/f5f9ff/333333?text=Parent" alt="Parent testimonial">
-            <div class="testimonial-content">
-                <div class="quote-bubble">
-                    <p>"My son has had a very positive experience with his math program. The teachers are very patient, supportive and always happy to accommodate him with his learning style. I highly recommend Positive Minds Academy. Thank you Ms. Sara for all of your effort!"</p>
-                    <p class="testimonial-author">- Monica Daultrey</p>
+    <!-- Advantages -->
+    <div class="advantage">
+        <div class="title">
+            <h2>Advantages Of Positive Minds Academy Math</h2>
+        </div>
+        <div class="cont">
+            <div class="left">
+                <div class="img-placeholder">Family Image</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Personalized Learning Experience</li>
+                    <li>Strong Foundational Skills</li>
+                    <li>Critical Thinking Development</li>
+                    <li>Engaging and Interactive Lessons</li>
+                    <li>Certified & Experienced Instructors</li>
+                    <li>Proven Track Record of Success</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="hiw">
+        <div class="title">
+            <h2>How it works</h2>
+        </div>
+        <div class="content">
+            <div class="item">2 Hours Per Week</div>
+            <div class="item">Interactive Learning</div>
+            <div class="item">A Custom Learning Experience</div>
+            <div class="item">Personalized Assessment</div>
+        </div>
+    </div>
+
+    <!-- Misc -->
+    <div class="misc">
+        <div class="logo_sec">
+            <h3>Learn About Other Programs</h3>
+            <div class="programs">
+                <div class="program">
+                    <div class="img-placeholder">English</div>
+                    <span>English</span>
+                </div>
+                <div class="program">
+                    <div class="img-placeholder">Coding</div>
+                    <span>Coding</span>
+                </div>
+                <div class="program">
+                    <div class="img-placeholder">Summer Camp</div>
+                    <span>Summer Camp</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Positive Minds</h3>
-                <p>About Us</p>
-                <p>Programs</p>
-                <p>News & Events</p>
-            </div>
-            <div class="footer-section">
-                <h3>Support</h3>
-                <p>FAQ</p>
-                <p>Resources</p>
-                <p>Contact</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Information</h3>
-                <p>Email: info@mathacademy.com</p>
-                <p>Phone: (555) 123-4567</p>
+        <div class="testimonials">
+            <h3>Hear from our parents!</h3>
+            <div class="testimonial">
+                <div class="img-placeholder">Parent Image</div>
+                <div class="content">
+                    <p>"My son has had a very positive experience with his math program. The teachers are very patient, supportive and always happy to accommodate him with his learning style. I highly recommend Positive Minds Academy. Thank you Ms. Sara for all of your effort!"</p>
+                    <p class="author">- Monica Daultrey</p>
+                </div>
             </div>
         </div>
-    </footer>
-</body>
-<script>
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('active');
-}
-</script>
-</html>
+    </div>
 
+    <!-- Footer -->
+    <div class="footer">
+        <div class="positive_minds">
+            <h3>Positive Minds</h3>
+            <p>About Us</p>
+            <p>Programs</p>
+            <p>News & Events</p>
+        </div>
+        <div class="support">
+            <h3>Support</h3>
+            <p>FAQ</p>
+            <p>Resources</p>
+            <p>Contact</p>
+        </div>
+        <div class="contact">
+            <h3>Contact Information</h3>
+            <p>Email: info@mathacademy.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 
