@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Minds Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+        <div class="sidebar-links">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#online">Online Classes</a>
+            <a href="#why">Why Us?</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#blog">Blog</a>
+            <a href="#camp">Summer Camp</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Positive Minds Academy">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#online">Online Classes</a>
+            <a href="#why">Why Us?</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#blog">Blog</a>
+            <a href="#camp">Summer Camp</a>
+            <button class="enquire-btn">Enquire Now</button>
+        </div>
+        <div class="menu-icon" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Mastery Through<br>Logical Thinking in Math</h1>
+            <p>We foster understanding by encouraging our students to work through challenging and unfamiliar problems</p>
+            <button class="schedule-button">Schedule An Evaluation</button>
+        </div>
+        <div class="hero-image">
+            <img src="math-student.jpg" alt="Student learning math">
+        </div>
+    </header>
+
+    <!-- Topics Section -->
+    <section class="topics">
+        <h2>What do we cover?</h2>
+        <div class="topics-grid">
+            <div class="topic-item">Measurements</div>
+            <div class="topic-item">Decimals</div>
+            <div class="topic-item">Fractions</div>
+            <div class="topic-item">Geometry</div>
+            <div class="topic-item">Problem Solving</div>
+            <div class="topic-item">Statistics & Graphing</div>
+        </div>
+    </section>
+
+    <!-- Levels Section -->
+    <section class="levels">
+        <h2>Choose Your Level</h2>
+        <div class="level-cards">
+            <div class="level-card">
+                <h3>Accelerated Level</h3>
+                <p>The Accelerated Level math program challenges students beyond grade-level expectations, emphasizing critical thinking and problem-solving.</p>
+            </div>
+            <div class="level-card">
+                <h3>Advanced Level</h3>
+                <p>The Advanced Level offers complex concepts, critical thinking and analytical reasoning, designed for honors students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+        <h2>Advantages Of Our Math Program</h2>
+        <div class="advantages-grid">
+            <div class="advantage-item">Personalized Learning Experience</div>
+            <div class="advantage-item">Strong Foundational Skills</div>
+            <div class="advantage-item">Critical Thinking Development</div>
+            <div class="advantage-item">Engaging Interactive Lessons</div>
+            <div class="advantage-item">Certified Instructors</div>
+            <div class="advantage-item">Proven Track Record</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Positive Minds</h3>
+                <p>About Us</p>
+                <p>Programs</p>
+                <p>News & Events</p>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>FAQ</p>
+                <p>Resources</p>
+                <p>Contact</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Email: info@mathacademy.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active');
+}
+</script>
+</html>
